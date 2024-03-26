@@ -17,7 +17,7 @@ items = [
    {"id": 8, "name": "Кепка" ,"quantity":124},
 ]
 
-itemsList = [i['name'] for i in items]
+itemsList = [[i['name'], f'item/{i["id"]}/'] for i in items]
 def main(request):
     return HttpResponse("""<h1>"Изучаем django"</h1>
                              <strong>Автор</strong>:
