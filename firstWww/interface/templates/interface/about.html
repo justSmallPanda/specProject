@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>About</title>
+</head>
+<body>
+<h1>About</h1>
+    <ul>
+        {% for i in dict %}
+            <li>{{i.0}}: <strong>{{i.1}}</strong></li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
